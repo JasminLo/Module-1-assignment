@@ -1,7 +1,5 @@
 public class test {
     public static void main(String[] args) {
-        System.out.println("OK");
-        // Nico son of a good woman
-       
+        System.out.println("OK");  
     }
 }
