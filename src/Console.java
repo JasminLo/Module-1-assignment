@@ -1,47 +1,39 @@
 public class Console {
     public static void main(String[] args) {
-        Animal snake = new Animal("Snake", 9, 9);
-        Animal rabbit = new Animal("Rabbit", 2,2);
+        Animal snake = new Animal("Snake", 10, 10);
+        Animal rabbit = new Animal("Rabbit", 1,1);
 
-        System.out.println("I am the " + rabbit.getName() + ", I am now standing on square " + rabbit.toString());
-
+        rabbit.getInfo();
         rabbit.translate(1,1);
 
-        System.out.println("I am the " + snake.getName() + ", I am now standing on square " + snake.toString());
-
+        snake.getInfo();
         snake.translate(-1,-1);
-
-        System.out.println("I am the " + rabbit.getName() + ", I am now standing on square " + rabbit.toString());
 
         rabbit.translate(1,1);
-
-        System.out.println("I am the " + snake.getName() + ", I am now standing on square " + snake.toString());
-
         snake.translate(-1,-1);
-
-        System.out.println("I am the " + rabbit.getName() + ", I am now standing on square " + rabbit.toString());
 
         rabbit.translate(1,1);
-
-        System.out.println("I am the " + snake.getName() + ", I am now standing on square " + snake.toString());
-
         snake.translate(-1,-1);
-
-        System.out.println("I am the " + rabbit.getName() + ", I am now standing on square " + rabbit.toString());
 
         rabbit.translate(1,1);
+        snake.translate(-1,-1);
 
-        System.out.println("I am the " + snake.getName() + ", I am now standing on square " + snake.toString());
+        // if/else for danger zone:
+        if(snake.getX() - rabbit.getX() == 1 && snake.getY() - rabbit.getY() == 1 ){
+            System.out.println("rabbit: Nooooo Please don't eat me!!");
+        }
+
 
         snake.translate(-1,-1);
 
-        System.out.println("Nooooo Please don't eat me!!");
-
-        System.out.println("I am the " + snake.getName() + ", I am now standing on square " + snake.toString());
-
-        snake.translate(-1,-1);
-
-        System.out.println("Ahhrrrrrr im eating you ha ha!");
+        // if/else kill zone :
+        if(rabbit.getX() == snake.getX()  && rabbit.getY() == snake.getY()){
+            System.out.println("Ahhrrrrrr im eating you ha ha!");
+            System.out.println(" ");
+            System.out.println("***********");
+            System.out.println(" GAME OVER");
+            System.out.println("***********");
+        }
 
     }
 }

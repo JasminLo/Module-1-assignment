@@ -21,10 +21,11 @@ public class Animal {
     // Shifts point by given amount
     public void translate(int dx, int dy){
         setLocation(x + dx, y + dy);
+        System.out.println("The " + this.name + " moved to (" + this.getX() + ", " + this.getY() + ")");
     }
 
     // Returns a string representation of points
-    public String toString() {
+    public String printPosition() {
         return "(" + x + ", " + y + ")";
     }
 
@@ -48,5 +49,9 @@ public class Animal {
     }
     public int getY() {
         return y;
+    }
+
+    public void getInfo() {
+        System.out.println("I am the " + this.getName() + ", I am standing on square " + this.printPosition());
     }
 }
