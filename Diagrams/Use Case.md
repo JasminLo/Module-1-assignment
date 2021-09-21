@@ -1,14 +1,18 @@
 Use Case
 
 Brief
+
 The user presses play. The console prints out the expected output for the
 Game.
 
 Casual
+
 Main Success Scenario:
+
 The user presses play and the console prints the expected output for the game.
 
 Alternate Scenarios:
+
 The user decides to stop the console while compiling.
 
 The user decides to take a look at the code instead of running the program.
@@ -16,6 +20,7 @@ The user decides to take a look at the code instead of running the program.
 The user has questions about the code or the logic behind the code.
 
 Fully Dressed
+
 Use Case Name: Play Game
 
 Scope: Little Animal Horror Zoo
