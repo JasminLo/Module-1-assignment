@@ -1,8 +1,11 @@
 public class Console {
     public static void main(String[] args) {
+
+        // Snake and Rabbit objects are created:
         Animal snake = new Animal("Snake", 10, 10);
         Animal rabbit = new Animal("Rabbit", 1,1);
 
+        // Game:
         rabbit.getInfo();
         rabbit.translate(1,1);
 
@@ -22,7 +25,6 @@ public class Console {
         if(snake.getX() - rabbit.getX() == 1 && snake.getY() - rabbit.getY() == 1 ){
             System.out.println("rabbit: Nooooo Please don't eat me!!");
         }
-
 
         snake.translate(-1,-1);
 
