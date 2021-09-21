@@ -18,7 +18,8 @@ public class Animal {
         this.y = y;
     }
 
-    // Method for shifting point by given amount:
+    // Method for shifting point by given amount
+    // Prints out Animal object name and new x and y position
     public void translate(int dx, int dy){
         setLocation(x + dx, y + dy);
         System.out.println("The " + this.name + " moved to (" + this.getX() + ", " + this.getY() + ")");
