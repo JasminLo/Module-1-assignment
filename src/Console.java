@@ -8,7 +8,7 @@ public class Console {
         // Game:
         // getInfo is used to print out the start position
         rabbit.getInfo();
-        // translate changes the Animal object's x and y position with dx and dy variables
+        // translate changes the Animal object's x and y position by dx and dy variables
         rabbit.translate(1,1);
 
         snake.getInfo();
